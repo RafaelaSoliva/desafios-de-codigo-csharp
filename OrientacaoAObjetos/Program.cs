@@ -4,7 +4,6 @@ using System;
 
 class Pessoa
 {
-    
     // Declaração de propriedades
     public string nome { get; set; }
     public int idade { get; set; }
@@ -34,8 +33,6 @@ class Program
 {
     static void Main()
     {
-
-
         // Obtém o nome e a idade do usuário.
         string nome = Console.ReadLine();
         int idade = int.Parse(Console.ReadLine());
