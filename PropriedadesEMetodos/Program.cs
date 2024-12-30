@@ -2,6 +2,7 @@
 
 using System;
 
+// Classe Robo
 class Robo {
     // Declaração de propriedades
     public int VelocidadeMinima { get; set; }
@@ -41,7 +42,7 @@ class Robo {
     }
 }
 
-// Runable
+// Runnable
 class Program {
     static void Main() {
         // Entrada de dados
@@ -49,7 +50,7 @@ class Program {
         int velocidadeMaxima = int.Parse(Console.ReadLine());
         string comandos = Console.ReadLine();
 
-        // Instancia a classe Robo
+        // Cria o objeto Robo
         Robo robo = new Robo(velocidadeMinima, velocidadeMaxima);
         
         // Controla a velocidade do robo

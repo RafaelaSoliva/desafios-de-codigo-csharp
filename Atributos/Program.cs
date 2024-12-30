@@ -1,7 +1,8 @@
-﻿// O objetivo é criar um programa que contenha o objeto jogador e o retorne para o usuário
+﻿// O objetivo é criar um programa que contenha o objeto jogador e o retorne para o usuário.
 
 using System;
 
+// Classe jogador
 class Jogador
 {
     // Declaração de propriedades
@@ -18,6 +19,7 @@ class Jogador
         Idade = idade;
         Posicao = posicao;
 
+        // Retorno confirmando a criação do jogador
         Console.WriteLine("Jogador criado!");
         Console.WriteLine(Nome);
         Console.WriteLine(Nacionalidade);
@@ -31,13 +33,13 @@ class Program
 {
     static void Main()
     {
-        // Entrada de dados
+        // Recebe os dados do jogador
         string nome = Console.ReadLine();
         string nacionalidade = Console.ReadLine();
         int idade = int.Parse(Console.ReadLine());
         string posicao = Console.ReadLine();
 
-        // Instancia a classe Jogador
+        // Criação do objeto jogador
         Jogador jogador = new Jogador(nome, nacionalidade, idade, posicao);
     }
 }

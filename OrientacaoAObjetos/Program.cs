@@ -2,6 +2,7 @@
 
 using System;
 
+// Classe Pessoa
 class Pessoa
 {
     // Declaração de propriedades
@@ -27,20 +28,19 @@ class Pessoa
     }
 }
 
-
 // Runnable
 class Program
 {
     static void Main()
     {
-        // Obtém o nome e a idade do usuário.
+        // Recebe o nome e a idade do usuário
         string nome = Console.ReadLine();
         int idade = int.Parse(Console.ReadLine());
 
-        // Instancia a classe Pessoa
+        // Cria o objeto pessoa
         Pessoa pessoa = new Pessoa(nome, idade);
 
-        // Retorna ao usuário
+        // Retorna ao usuário os dados recebidos
         Console.WriteLine($"Nome: {pessoa.GetNome()}, Idade: {pessoa.GetIdade()}");
     }
 }
