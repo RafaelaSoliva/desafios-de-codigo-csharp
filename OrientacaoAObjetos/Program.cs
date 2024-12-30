@@ -37,7 +37,7 @@ class Program
         string nome = Console.ReadLine();
         int idade = int.Parse(Console.ReadLine());
 
-        // Instancia a classe pessoa
+        // Instancia a classe Pessoa
         Pessoa pessoa = new Pessoa(nome, idade);
 
         // Retorna ao usuário

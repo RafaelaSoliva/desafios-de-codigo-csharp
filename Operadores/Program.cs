@@ -14,7 +14,7 @@ class Program
       string descricao;
       string dataVencimento;
         
-      // Obtém o titulo e a descricao a partir da entrada do console  
+      // Obtém o titulo e a descrição a partir da entrada do console  
       titulo = Console.ReadLine();
       descricao = Console.ReadLine();
 
