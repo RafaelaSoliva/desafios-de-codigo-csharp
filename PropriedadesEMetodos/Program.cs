@@ -50,7 +50,7 @@ class Program {
         int velocidadeMaxima = int.Parse(Console.ReadLine());
         string comandos = Console.ReadLine();
 
-        // Cria o objeto Robo
+        // Cria o objeto robo
         Robo robo = new Robo(velocidadeMinima, velocidadeMaxima);
         
         // Controla a velocidade do robo
