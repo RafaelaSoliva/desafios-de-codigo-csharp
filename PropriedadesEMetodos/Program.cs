@@ -46,9 +46,12 @@ class Robo {
 class Program {
     static void Main() {
         // Entrada de dados
-        int velocidadeMinima = int.Parse(Console.ReadLine());
-        int velocidadeMaxima = int.Parse(Console.ReadLine());
+        string[] valoresEntrada = Console.ReadLine().Split(' ');
         string comandos = Console.ReadLine();
+
+        // Converte os valores de entrada de string para int
+        int velocidadeMinima = int.Parse(valoresEntrada[0]);
+        int velocidadeMaxima = int.Parse(valoresEntrada[1]);
 
         // Cria o objeto robo
         Robo robo = new Robo(velocidadeMinima, velocidadeMaxima);
